@@ -25,7 +25,7 @@ export class HomePage {
   }
 
   getAllNotes(): any {
-    this.noteService.getAllNotes();
+    return this.noteService.getAllNotes();
   }
 
 }

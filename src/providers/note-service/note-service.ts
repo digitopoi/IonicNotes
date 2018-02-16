@@ -7,7 +7,6 @@ export class NoteService {
   private notes: { title: string }[] = [];
 
   constructor() {
-    
   }
 
   saveNote(note: { title: string }) {
