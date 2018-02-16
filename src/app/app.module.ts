@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AddNotePage } from '../pages/add-note/add-note';
 import { IonicStorageModule } from '@ionic/storage';
+import { NoteService } from '../providers/note-service/note-service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { IonicStorageModule } from '@ionic/storage';
   ],
   providers: [
     StatusBar,
+    NoteService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
